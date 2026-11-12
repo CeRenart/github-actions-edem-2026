@@ -12,4 +12,4 @@ jobs:
     steps:
       - run: echo "Hello there, ${{ inputs.thename }}!"
 
-      
+
