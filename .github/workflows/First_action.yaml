@@ -5,5 +5,5 @@ jobs:
   say_hello:
     runs-on: ubuntu-latest
     steps:
-      - run: echoo "Hello there!"
+      - run: echo "Hello there!"
 
