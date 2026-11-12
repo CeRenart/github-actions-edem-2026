@@ -1,4 +1,4 @@
-name: Welcome to the party (output) 
+name: Welcome to the party output
 on:
   workflow_dispatch: 
 jobs:
@@ -9,7 +9,7 @@ jobs:
       - id: get-time
         name: Grab the current time 
         run: |
-        curTime=$(date)
-        echo "currenttime=${curTime}" >> $GITHUB_OUTPUT
+          curTime=$(date)
+          echo "currenttime=${curTime}" >> $GITHUB_OUTPUT
       - run: echo "The time from the early step is
           ${{ steps.get-time.outputs.currenttime }}"
